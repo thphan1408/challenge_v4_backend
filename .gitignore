@@ -1,0 +1,28 @@
+# Node / TS
+node_modules/
+dist/
+coverage/
+logs/
+*.log
+pids/
+*.pid
+*.pid.lock
+
+# Env & secrets
+.env
+serviceAccount*.json
+**/serviceAccount*.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Docker (tùy)
+docker-compose.override.yml
+*.local.yml
+
+# Husky (generated cache)
+.husky/_
