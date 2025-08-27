@@ -28,5 +28,6 @@ employeeRoutes.post(
 );
 employeeRoutes.post('/validate-access-code', employeeController.validateAccessCode);
 employeeRoutes.post('/:employeeId', employeeController.getEmployee);
+employeeRoutes.get('/', employeeController.getAll);
 
 export default employeeRoutes;

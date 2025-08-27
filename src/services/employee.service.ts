@@ -48,6 +48,10 @@ export class EmployeeService {
     return this.employeeRepository.findById(employeeId);
   }
 
+  async getAllEmployees(): Promise<EmployeeEntity[]> {
+    return this.employeeRepository.findAll();
+  }
+
   async createEmployee({
     name,
     email,

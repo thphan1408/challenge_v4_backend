@@ -8,6 +8,15 @@ export class EmployeeController extends BaseController {
     super();
   }
 
+  getAll = async (req: Request, res: Response) => {
+    try {
+      const employees = await this.employeeService.getAllEmployees();
+      res.status(200).json(employees);
+    } catch (error) {
+      throw error;
+    }
+  };
+
   getEmployee = async (req: Request, res: Response) => {
     try {
       const { employeeId } = req.params;
